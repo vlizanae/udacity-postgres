@@ -83,8 +83,8 @@ INSERT INTO users
     (user_id, first_name, last_name, gender, level)
 VALUES
     (%s, %s, %s, %s, %s)
-ON CONFLICT
-    DO NOTHING;
+ON CONFLICT (user_id)
+    DO UPDATE SET level=EXCLUDED.level;
 """)
 
 song_table_insert = ("""
