@@ -2,8 +2,6 @@
 
 by Vicente Lizana
 
----
-
 ## Summary
 
 At Sparkify, the Data Engineering team has created the Relational DB `sparkifydb`,
